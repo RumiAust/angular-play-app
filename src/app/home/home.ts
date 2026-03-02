@@ -10,7 +10,7 @@ import { Counter } from '../components/counter/counter';
   styleUrl: './home.css',
 })
 export class Home {
-  homeMessageToGreeting = signal('Hello from Home Component to Greeting Component!');
+  homeMessageToGreeting = signal('Hi, I am from Greeting Component!');
   keyMessage = signal('');
   keyHandler(event: KeyboardEvent) {
     console.log('Key pressed: ', event.key);
