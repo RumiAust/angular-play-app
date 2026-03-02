@@ -1,0 +1,31 @@
+<div class="home-container">
+
+  <h2 class="home-title">🏠 Home</h2>
+
+  <p class="home-subtitle">
+    Welcome to the home page!
+  </p>
+
+  <div class="greeting-section">
+    <app-greeting [message]="homeMessageToGreeting()" />
+  </div>
+
+  <div class="input-section">
+    <input
+      type="text"
+      (keyup)="keyHandler($event)"
+      placeholder="Type a message for the greeting component"
+      class="message-input"
+    />
+  </div>
+
+  <p class="typed-message">
+    You typed:
+    <span class="typed-value">{{ keyMessage() }}</span>
+  </p>
+
+  <div class="counter-section">
+    <app-counter></app-counter>
+  </div>
+
+</div>

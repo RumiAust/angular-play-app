@@ -1,0 +1,33 @@
+<h2 class="title">Welcome, Todos Page</h2>
+
+<div class="container">
+
+  <input 
+    #inputEl
+    class="search-input"
+    [value]="searchTerm()"
+    (input)="searchTerm.set(inputEl.value)" 
+    type="text" 
+    placeholder="Search todos..." 
+  />
+
+  <ul class="todo-list">
+    @for (todo of (todoItemsApi() | filterTodo:searchTerm()); track todo.id) {
+      <li class="todo-item">
+        <label class="todo-content">
+          <input 
+            type="checkbox"
+            [checked]="todo.completed"
+            (change)="todo.completed = $event.target.checked"
+          >
+          <span 
+            [class.completed]="todo.completed"
+            [appTodoHighlight]="todo.completed">
+            {{ todo.title | uppercase }}
+          </span>
+        </label>
+      </li>
+    }
+  </ul>
+
+</div>
