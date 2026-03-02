@@ -1,0 +1,1 @@
+import{Ra as n,Sa as c,bb as r,za as o}from"./chunk-THBOYGFS.js";var p=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["app-product"]],decls:2,vars:0,template:function(t,i){t&1&&(n(0,"p"),r(1,"product works!"),c())},encapsulation:2})};export{p as Product};
