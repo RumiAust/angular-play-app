@@ -2,6 +2,7 @@
 
 <div class="container">
 
+  <!-- Search Input -->
   <input 
     #inputEl
     class="search-input"
@@ -11,23 +12,61 @@
     placeholder="Search todos..." 
   />
 
-  <ul class="todo-list">
-    @for (todo of (todoItemsApi() | filterTodo:searchTerm()); track todo.id) {
-      <li class="todo-item">
-        <label class="todo-content">
-          <input 
-            type="checkbox"
-            [checked]="todo.completed"
-            (change)="todo.completed = $event.target.checked"
-          >
-          <span 
-            [class.completed]="todo.completed"
-            [appTodoHighlight]="todo.completed">
-            {{ todo.title | uppercase }}
-          </span>
-        </label>
-      </li>
-    }
-  </ul>
+  <!-- Page Size Selector -->
+  <div class="page-size-control">
+    <label for="pageSize">Page Size:</label>
+    <select id="pageSize" (change)="onPageSizeChange($any($event.target).value)">
+      <option value="5" [selected]="pagination.pageSize() === 5">5</option>
+      <option value="10" [selected]="pagination.pageSize() === 10">10</option>
+      <option value="15" [selected]="pagination.pageSize() === 15">15</option>
+      <option value="20" [selected]="pagination.pageSize() === 20">20</option>
+    </select>
+  </div>
+
+  <!-- Pagination Controls -->
+<!-- Pagination Controls -->
+  <!-- Pagination Controls -->
+  @if (pagination.totalPages() > 1) {
+    <div class="pagination">
+      <button (click)="prevPage()" [disabled]="pagination.currentPage() === 1">Previous</button>
+
+      <span class="page-info">
+        Page {{ pagination.currentPage() }} of {{ pagination.totalPages() }}
+      </span>
+
+      <button (click)="nextPage()" [disabled]="pagination.currentPage() === pagination.totalPages()">Next</button>
+    </div>
+  }
+
+
+  <!-- Todo List Box -->
+  <div class="list-box" #listBox>
+    <ul class="todo-list">
+      @for (todo of pagination.paginatedItems(); track todo.id) {
+        <li class="todo-item">
+          <label class="todo-content">
+            <input 
+              type="checkbox"
+              [checked]="todo.completed"
+              (change)="todo.completed = $event.target.checked"
+            >
+            <span 
+              class="todo-text"
+              [class.completed]="todo.completed"
+              [appTodoHighlight]="todo.completed">
+              {{ todo.title | uppercase }}
+            </span>
+          </label>
+        </li>
+      }
+
+      @if (pagination.paginatedItems().length === 0) {
+        <li class="todo-item empty">
+          No todos found.
+        </li>
+      }
+    </ul>
+  </div>
+   
 
 </div>
