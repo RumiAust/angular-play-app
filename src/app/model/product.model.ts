@@ -1,5 +1,5 @@
 export interface Product {
-  id?: number;   // optional because JSON server generates it
+  id?: number;
   name: string;
   price: number;
 }
