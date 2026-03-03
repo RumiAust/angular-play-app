@@ -11,7 +11,7 @@ import { PaginationService } from '../services/pagination.service';
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, TodoDirective, FormsModule, FilterTodoPipe],
+  imports: [CommonModule, TodoDirective, FormsModule],
   providers: [PaginationService],
   templateUrl: './todos.html',
   styleUrl: './todos.css',
