@@ -6,6 +6,14 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 To start a local development server, run:
 
+## Deploy in github Pages
+
+```bash
+ng build --configuration production --base-href "https://RumiAust.github.io/angular-play-app/"
+copy all files from brower and put it inside the ./angular-play-app and delete browser file
+npx angular-cli-ghpages --dir=dist/angular-play-app
+```
+
 ```bash
 ng serve
 ```
