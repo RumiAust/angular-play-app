@@ -8,6 +8,7 @@
       type="text"
       placeholder="Enter phone name"
       [(ngModel)]="newProduct.name"
+      [ngModelOptions]="{standalone: true}"
     />
   </div>
 
@@ -18,8 +19,50 @@
       type="number"
       placeholder="Enter price"
       [(ngModel)]="newProduct.price"
+      [ngModelOptions]="{standalone: true}"
     />
   </div>
 
   <button class="btn add" (click)="confirmAddProduct()">Add Phone</button>
 </fieldset>
+
+<!-- Product list -->
+<div *ngIf="products$ | async as products; else noProducts">
+  <h3>Available Phones</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Phone Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id ?? '-' }}</td>
+        <td>
+          <input
+            [(ngModel)]="product.name"
+            [ngModelOptions]="{standalone: true}"
+          />
+        </td>
+        <td>
+          <input
+            type="number"
+            [(ngModel)]="product.price"
+            [ngModelOptions]="{standalone: true}"
+          />
+        </td>
+        <td>
+          <button class="btn update" (click)="updateProduct(product)">Update</button>
+          <button class="btn delete" (click)="deleteProduct(product.id!)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noProducts>
+  <p>No phones available. Add one above!</p>
+</ng-template>
