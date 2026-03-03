@@ -1,1 +1,19 @@
-<p>product works!</p>
+<h2>Phones</h2>
+
+<ul>
+  <li *ngFor="let product of products">
+    <input [(ngModel)]="product.name" />
+    <input type="number" [(ngModel)]="product.price" />
+
+    <button (click)="updateProduct(product)">Update</button>
+    <button (click)="deleteProduct(product.id)">Delete</button>
+  </li>
+</ul>
+
+<hr />
+
+<h3>Add New Phone</h3>
+
+<input type="text" placeholder="Phone name" [(ngModel)]="newProduct.name" />
+<input type="number" placeholder="Price" [(ngModel)]="newProduct.price" />
+<button (click)="addProduct()">Add</button>

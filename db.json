@@ -1,18 +1,32 @@
 {
   "users": [
-    { "id": 1, "name": "John Doe", "email": "john@example.com" },
-    { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com"
+    }
   ],
   "products": [
-        {
-      "id": 1,
+    {
+      "id": "1",
       "name": "iPhone 15",
       "price": 999
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Samsung Galaxy S24",
       "price": 899
+    },
+    {
+      "id": "5183",
+      "name": "rumi",
+      "price": 5
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
