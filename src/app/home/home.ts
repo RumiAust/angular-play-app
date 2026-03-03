@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Greeting } from '../components/greeting/greeting';
+import { MathGame } from '../math-game/math-game';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Greeting],
+  imports: [Greeting, MathGame],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

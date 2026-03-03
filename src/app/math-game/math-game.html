@@ -1,1 +1,29 @@
-<p>math-game works!</p>
+<h2>Wanna Play Math Game?</h2>
+<div class="game-container">
+
+  <h2>Math Game</h2>
+
+  <div class="score">
+    🏆 Score: {{ game.score() }}
+    <button (click)="game.resetScore()">Reset</button>
+  </div>
+
+  <div class="question">
+    {{ game.number1() }} {{ game.operator() }} {{ game.number2() }} = ?
+  </div>
+
+  <div class="buttons">
+    @for (option of game.options(); track option) {
+      <button (click)="game.checkAnswer(option)">
+        {{ option }}
+      </button>
+    }
+  </div>
+
+  @if (game.message()) {
+    <div class="result-message">
+      {{ game.message() }}
+    </div>
+  }
+
+</div>
