@@ -1,0 +1,81 @@
+/* Container for the Add Product section */
+.add-product-section {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  background-color: #f9fff9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Legend styling */
+.add-product-section legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #4caf50;
+  padding: 0 10px;
+}
+
+/* Field styling */
+.add-product-section .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.add-product-section label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Input styling */
+.add-product-section input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus effect */
+.add-product-section input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+/* Button styling */
+.add-product-section button.add {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+.add-product-section button.add:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.notification {
+  max-width: 500px;
+  margin: 0 auto 20px auto; /* space above and below */
+  padding: 12px 15px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

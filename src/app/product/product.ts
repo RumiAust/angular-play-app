@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-product',
   standalone: true,
   templateUrl: './product.html',
+  styleUrls: ['./product.css'],
   imports: [FormsModule, CommonModule]
 })
 export class Product implements OnInit {
@@ -63,4 +64,18 @@ export class Product implements OnInit {
       error: (err) => console.error(err)
     });
   }
+  confirmAddProduct(): void {
+  if (!this.newProduct.name || this.newProduct.price <= 0) {
+    alert('Please enter valid product details.');
+    return;
+  }
+
+  const confirmAdd = confirm(
+    `Are you sure you want to add "${this.newProduct.name}" with price ${this.newProduct.price}?`
+  );
+
+  if (confirmAdd) {
+    this.addProduct();
+  }
+}
 }

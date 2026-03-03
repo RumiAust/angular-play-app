@@ -13,11 +13,6 @@
   ],
   "products": [
     {
-      "id": "1",
-      "name": "iPhone 15",
-      "price": 999
-    },
-    {
       "id": "2",
       "name": "Samsung Galaxy S24",
       "price": 899
@@ -26,6 +21,46 @@
       "id": "5183",
       "name": "rumi",
       "price": 5
+    },
+    {
+      "id": "504b",
+      "name": "Rome",
+      "price": 839
+    },
+    {
+      "id": "ab7b",
+      "name": "Italy",
+      "price": 9
+    },
+    {
+      "id": "c47c",
+      "name": "Sumee",
+      "price": 81
+    },
+    {
+      "id": "25ee",
+      "name": "K99",
+      "price": 10
+    },
+    {
+      "id": "bab8",
+      "name": "K93",
+      "price": 7
+    },
+    {
+      "id": "9494",
+      "name": "Tu",
+      "price": 80
+    },
+    {
+      "id": "431d",
+      "name": "Tua",
+      "price": 90
+    },
+    {
+      "id": "241d",
+      "name": "WWW",
+      "price": 10
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

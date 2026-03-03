@@ -1,19 +1,25 @@
-<h2>Phones</h2>
+<fieldset class="add-product-section">
+  <legend>Add New Phone</legend>
 
-<ul>
-  <li *ngFor="let product of products">
-    <input [(ngModel)]="product.name" />
-    <input type="number" [(ngModel)]="product.price" />
+  <div class="field">
+    <label for="phoneName">Phone Name:</label>
+    <input
+      id="phoneName"
+      type="text"
+      placeholder="Enter phone name"
+      [(ngModel)]="newProduct.name"
+    />
+  </div>
 
-    <button (click)="updateProduct(product)">Update</button>
-    <button (click)="deleteProduct(product.id)">Delete</button>
-  </li>
-</ul>
+  <div class="field">
+    <label for="phonePrice">Price:</label>
+    <input
+      id="phonePrice"
+      type="number"
+      placeholder="Enter price"
+      [(ngModel)]="newProduct.price"
+    />
+  </div>
 
-<hr />
-
-<h3>Add New Phone</h3>
-
-<input type="text" placeholder="Phone name" [(ngModel)]="newProduct.name" />
-<input type="number" placeholder="Price" [(ngModel)]="newProduct.price" />
-<button (click)="addProduct()">Add</button>
+  <button class="btn add" (click)="confirmAddProduct()">Add Phone</button>
+</fieldset>
