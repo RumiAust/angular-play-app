@@ -1,28 +1,48 @@
-<h2>Wanna Play Math Game?</h2>
 <div class="game-container">
 
   <h2>Math Game</h2>
 
-  <div class="score">
-    🏆 Score: {{ game.score() }}
-    <button (click)="game.resetScore()">Reset</button>
+  <div class="top-panel">
+    🏆 Score: {{ game.score() }} |
+    ⏱ Time: {{ game.timeLeft() }}
   </div>
 
-  <div class="question">
-    {{ game.number1() }} {{ game.operator() }} {{ game.number2() }} = ?
-  </div>
+  <div class="controls">
 
-  <div class="buttons">
-    @for (option of game.options(); track option) {
-      <button (click)="game.checkAnswer(option)">
-        {{ option }}
-      </button>
+    <label>Difficulty:</label>
+    <select (change)="game.setDifficulty($any($event.target).value)">
+      <option value="easy">Easy (5s)</option>
+      <option value="medium">Medium (3s)</option>
+      <option value="hard">Hard (2s)</option>
+    </select>
+
+    @if (!game.isPlaying()) {
+      <button (click)="game.startGame()">▶ Start</button>
     }
+
+    @if (game.isPlaying()) {
+      <button (click)="game.stopGame()">⏹ Stop</button>
+    }
+
   </div>
 
-  @if (game.message()) {
-    <div class="result-message">
-      {{ game.message() }}
+  @if (game.isPlaying()) {
+    <div class="question">
+      {{ game.number1() }} {{ game.operator() }} {{ game.number2() }} = ?
+    </div>
+
+    <div class="buttons">
+      @for (option of game.options(); track option) {
+        <button (click)="game.checkAnswer(option)">
+          {{ option }}
+        </button>
+      }
+    </div>
+  }
+
+  @if (game.isGameOver()) {
+    <div class="game-over">
+      💀 Game Over! Final Score: {{ game.score() }}
     </div>
   }
 
