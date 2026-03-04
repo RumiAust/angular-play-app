@@ -32,7 +32,6 @@
   <table>
     <thead>
       <tr>
-        <th>ID</th>
         <th>Phone Name</th>
         <th>Price</th>
         <th>Actions</th>
@@ -40,7 +39,6 @@
     </thead>
     <tbody>
       <tr *ngFor="let product of products">
-        <td>{{ product.id ?? '-' }}</td>
         <td>
           <input
             [(ngModel)]="product.name"

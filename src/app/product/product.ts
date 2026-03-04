@@ -63,6 +63,7 @@ export class Product {
   this.productService.updateProduct(payload).subscribe({
     next: (updated) => {
       console.log('Product updated:', updated);
+      alert(`Product "${updated.name}" with price $${updated.price} updated successfully!`);
       this.refreshProducts$.next(); // trigger reload after successful update
     },
     error: (err) => console.error('Update failed:', err),
@@ -72,7 +73,10 @@ export class Product {
   deleteProduct(id?: number): void {
     if (!id) return;
     this.productService.deleteProduct(id).subscribe({
-      next: () => this.refreshProducts$.next(),
+      next: () => {
+        this.refreshProducts$.next();
+        alert('Product deleted successfully!');
+      },
       error: (err) => console.error(err),
     });
   }
