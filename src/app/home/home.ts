@@ -9,7 +9,7 @@ import { Greeting } from '../components/greeting/greeting';
   styleUrl: './home.css',
 })
 export class Home {
-  homeMessageToGreeting = signal('Hi, I am from Greeting Component!');
+  homeMessageToGreeting = signal('');
   keyMessage = signal('');
   keyHandler(event: KeyboardEvent) {
     console.log('Key pressed: ', event.key);

@@ -1,0 +1,81 @@
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Grid layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+/* Individual project cards */
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover animation */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.project-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.project-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Tech tags */
+.project-tech span {
+  background: #e3efff;
+  color: #0a4dff;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+/* GitHub link */
+.project-link {
+  text-decoration: none;
+  background: #0a4dff;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.project-link:hover {
+  background: #0837c9;
+}

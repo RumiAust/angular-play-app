@@ -1,1 +1,25 @@
-<h3>{{message()}}</h3>
+<h2 class="title">{{ message() }}</h2>
+
+<div class="projects-container">
+  <div class="project-card" *ngFor="let project of projects$ | async">
+    
+    <div class="project-header">
+      <h3>{{ project.name }}</h3>
+    </div>
+
+    <p class="project-desc">
+      {{ project.description }}
+    </p>
+
+    <div class="project-tech">
+      <span>🛠 {{ project.techStack }}</span>
+    </div>
+
+    <a 
+      class="project-link" 
+      [href]="project.github" 
+      target="_blank">
+      <span>🔗 View on GitHub</span>
+    </a>
+  </div>
+</div>

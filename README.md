@@ -9,16 +9,20 @@ To start a local development server, run:
 ## Deploy in github Pages
 
 ```bash
-ng build --configuration production --base-href "https://RumiAust.github.io/angular-play-app/"
-copy all files from brower and put it inside the ./angular-play-app and delete browser file
-npx angular-cli-ghpages --dir=dist/angular-play-app
-```
-
-```bash
 ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+```bash
+ng build --configuration production --base-href "https://RumiAust.github.io/angular-play-app/"
+copy all files from brower and put it inside the ./angular-play-app and delete browser file
+npx angular-cli-ghpages --dir=dist/angular-play-app
+```
+You need to run Json server to see the resut: 
+```bash
+json-server --watch db.json --port 3000
+```
 
 ## Code scaffolding
 

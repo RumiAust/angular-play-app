@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio Website",
+      "description": "A personal portfolio showcasing my projects and skills.",
+      "github": "https://github.com/yourname/portfolio",
+      "techStack": "Angular, TypeScript, CSS"
+    },
+    {
+      "name": "Task Manager",
+      "description": "A full-stack task managing app.",
+      "github": "https://github.com/yourname/task-manager",
+      "techStack": "Node.js, Express, MongoDB"
+    },
+    {
+      "name": "Weather App",
+      "description": "Shows real-time weather using an API.",
+      "github": "https://github.com/yourname/weather-app",
+      "techStack": "React, Tailwind, OpenWeather API"
+    },
+    {
+      "name": "Chat Application",
+      "description": "Real-time chat with websockets support.",
+      "github": "https://github.com/yourname/chat-app",
+      "techStack": "Socket.io, Node.js, Angular"
+    },
+    {
+      "name": "E-Commerce Store",
+      "description": "A mock online shopping store with cart functionality.",
+      "github": "https://github.com/yourname/ecommerce",
+      "techStack": "React, Redux, Firebase"
+    },
+    {
+      "name": "AI Image Generator",
+      "description": "AI-driven image generation UI.",
+      "github": "https://github.com/yourname/ai-generator",
+      "techStack": "Python, FastAPI, Angular"
+    },
+    {
+      "name": "Blog Platform",
+      "description": "A simple blog system with CRUD.",
+      "github": "https://github.com/yourname/blog",
+      "techStack": "Django, PostgreSQL"
+    },
+    {
+      "name": "Expense Tracker",
+      "description": "Track daily expenses and categories.",
+      "github": "https://github.com/yourname/expense-tracker",
+      "techStack": "Vue.js, Node.js"
+    },
+    {
+      "name": "Fitness App",
+      "description": "Workout routines and tracking.",
+      "github": "https://github.com/yourname/fitness-app",
+      "techStack": "Flutter, Firebase"
+    }
+  ]
+}
