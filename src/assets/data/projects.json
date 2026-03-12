@@ -4,7 +4,7 @@
       "name": "Univeristy Automation- IUMS",
       "description": "Intergarted University management System for ICT department of the University",
       "github": "https://github.com/apu84/UMS",
-      "techStack": "Java,SpringBoot,Angular,TypeScript,Oracle DB, BootStarp"
+      "techStack": "Java, SpringBoot, Angular, TypeScript, Oracle, BootStarp"
     },
     {
       "name": "OpenID Connect Doctor",
@@ -13,7 +13,7 @@
       "techStack": "Node.js, Express, Angular, Typescript"
     },
     {
-      "name": "SSL Secure connection",
+      "name": "SSL Secure Connection",
       "description": "Establishing Secure connection with Dotnet application",
       "github": "https://github.com/RumiAust/DotNetAngularAppWithSSL",
       "techStack": "Dotnet, C#, Angular"
