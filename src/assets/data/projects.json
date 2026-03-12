@@ -25,13 +25,13 @@
       "techStack": "SpringMVC, Html, Thymeleaf"
     },
     {
-      "name": "Fidn Intersection",
+      "name": "Find Intersection",
       "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
       "github": "https://github.com/RumiAust/FindIntersect",
       "techStack": "SpringBoot, Java"
     },
     {
-      "name": "Fidn Intersection UI",
+      "name": "Find Intersection UI",
       "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
       "github": "https://github.com/RumiAust/FindIntersectionAppUI",
       "techStack": "Angular, Typescript, BootStarp"

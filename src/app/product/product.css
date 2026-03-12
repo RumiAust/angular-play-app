@@ -4,6 +4,13 @@
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+.add-product-section legend {
+  font-weight: bold;
+}
+
+.add-product-section label {
+  font-weight: bold;
+}
 
 .field {
   margin-bottom: 10px;
