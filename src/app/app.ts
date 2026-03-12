@@ -12,6 +12,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('Rumi');
-  myTitle = signal('Welcome, Playing with Angular App!');
   
 }
