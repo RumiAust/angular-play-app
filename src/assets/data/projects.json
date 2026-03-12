@@ -8,7 +8,7 @@
     },
     {
       "name": "OpenID Connect Doctor",
-      "description": " the creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
+      "description": "Creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
       "github": "https://github.com/RumiAust/amos2022ss08-openid-connect-doctor",
       "techStack": "Node.js, Express, Angular, Typescript"
     },
@@ -25,13 +25,13 @@
       "techStack": "SpringMVC, Html, Thymeleaf"
     },
     {
-      "name": "Fidn Intersion",
+      "name": "Fidn Intersection",
       "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
       "github": "https://github.com/RumiAust/FindIntersect",
       "techStack": "SpringBoot, Java"
     },
     {
-      "name": "Fidn Intersion UI",
+      "name": "Fidn Intersection UI",
       "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
       "github": "https://github.com/RumiAust/FindIntersectionAppUI",
       "techStack": "Angular, Typescript, BootStarp"
