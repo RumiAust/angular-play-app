@@ -10,7 +10,7 @@
       "name": "OpenID Connect Doctor",
       "description": "Creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
       "github": "https://github.com/RumiAust/amos2022ss08-openid-connect-doctor",
-      "techStack": "Node.js, Express, Angular, Typescript"
+      "techStack": "Node.js, Angular, Typescript, Html, CSS"
     },
     {
       "name": "SSL Secure Connection",
