@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "name": "Univeristy Automation- IUMS",
+      "description": "Intergarted University management System for ICT department of the University",
+      "github": "https://github.com/apu84/UMS",
+      "techStack": "Java, SpringBoot, Angular, TypeScript, Oracle, BootStarp"
+    },
+    {
+      "name": "OpenID Connect Doctor",
+      "description": "Creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
+      "github": "https://github.com/RumiAust/amos2022ss08-openid-connect-doctor",
+      "techStack": "Node.js, Express, Angular, Typescript"
+    },
+    {
+      "name": "SSL Secure Connection",
+      "description": "Establishing Secure connection with Dotnet application",
+      "github": "https://github.com/RumiAust/DotNetAngularAppWithSSL",
+      "techStack": "Dotnet, C#, Angular"
+    },
+    {
+      "name": "Post Graduate Admission System",
+      "description": "An application system for post gradute students to apply for post graduate programs",
+      "github": "https://github.com/RumiAust/PgAdmissionSystem",
+      "techStack": "SpringMVC, Html, Thymeleaf"
+    },
+    {
+      "name": "Fidn Intersection",
+      "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
+      "github": "https://github.com/RumiAust/FindIntersect",
+      "techStack": "SpringBoot, Java"
+    },
+    {
+      "name": "Fidn Intersection UI",
+      "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
+      "github": "https://github.com/RumiAust/FindIntersectionAppUI",
+      "techStack": "Angular, Typescript, BootStarp"
+    },
+    {
+      "name": "Angular-Play-App",
+      "description": "Playing with Angular basic to intermendiate features with Https API, json Server",
+      "github": "https://github.com/RumiAust/angular-play-app",
+      "techStack": "Angular, Typescript, HTML, CSS"
+    }
+  ]
+}

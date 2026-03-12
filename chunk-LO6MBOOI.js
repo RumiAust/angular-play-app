@@ -1,1 +1,0 @@
-import{Ra as m,Sa as p,bb as n,za as t}from"./chunk-THBOYGFS.js";var r=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-employee-form"]],decls:2,vars:0,template:function(e,a){e&1&&(m(0,"p"),n(1,"employee-form works!"),p())},encapsulation:2})};export{r as EmployeeForm};
