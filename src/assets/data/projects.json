@@ -1,58 +1,46 @@
 {
   "projects": [
     {
-      "name": "Portfolio Website",
-      "description": "A personal portfolio showcasing my projects and skills.",
-      "github": "https://github.com/yourname/portfolio",
-      "techStack": "Angular, TypeScript, CSS"
+      "name": "Univeristy Automation- IUMS",
+      "description": "Intergarted University management System for ICT department of the University",
+      "github": "https://github.com/apu84/UMS",
+      "techStack": "Java,SpringBoot,Angular,TypeScript,Oracle DB, BootStarp"
     },
     {
-      "name": "Task Manager",
-      "description": "A full-stack task managing app.",
-      "github": "https://github.com/yourname/task-manager",
-      "techStack": "Node.js, Express, MongoDB"
+      "name": "OpenID Connect Doctor",
+      "description": " the creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
+      "github": "https://github.com/RumiAust/amos2022ss08-openid-connect-doctor",
+      "techStack": "Node.js, Express, Angular, Typescript"
     },
     {
-      "name": "Weather App",
-      "description": "Shows real-time weather using an API.",
-      "github": "https://github.com/yourname/weather-app",
-      "techStack": "React, Tailwind, OpenWeather API"
+      "name": "SSL Secure connection",
+      "description": "Establishing Secure connection with Dotnet application",
+      "github": "https://github.com/RumiAust/DotNetAngularAppWithSSL",
+      "techStack": "Dotnet, C#, Angular"
     },
     {
-      "name": "Chat Application",
-      "description": "Real-time chat with websockets support.",
-      "github": "https://github.com/yourname/chat-app",
-      "techStack": "Socket.io, Node.js, Angular"
+      "name": "Post Graduate Admission System",
+      "description": "An application system for post gradute students to apply for post graduate programs",
+      "github": "https://github.com/RumiAust/PgAdmissionSystem",
+      "techStack": "SpringMVC, Html, Thymeleaf"
     },
     {
-      "name": "E-Commerce Store",
-      "description": "A mock online shopping store with cart functionality.",
-      "github": "https://github.com/yourname/ecommerce",
-      "techStack": "React, Redux, Firebase"
+      "name": "Fidn Intersion",
+      "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
+      "github": "https://github.com/RumiAust/FindIntersect",
+      "techStack": "SpringBoot, Java"
     },
     {
-      "name": "AI Image Generator",
-      "description": "AI-driven image generation UI.",
-      "github": "https://github.com/yourname/ai-generator",
-      "techStack": "Python, FastAPI, Angular"
+      "name": "Fidn Intersion UI",
+      "description": "Fidn the intersection between two list two given list where one can be Hashset and other can be iterator",
+      "github": "https://github.com/RumiAust/FindIntersectionAppUI",
+      "techStack": "Angular, Typescript, BootStarp"
     },
     {
-      "name": "Blog Platform",
-      "description": "A simple blog system with CRUD.",
-      "github": "https://github.com/yourname/blog",
-      "techStack": "Django, PostgreSQL"
-    },
-    {
-      "name": "Expense Tracker",
-      "description": "Track daily expenses and categories.",
-      "github": "https://github.com/yourname/expense-tracker",
-      "techStack": "Vue.js, Node.js"
-    },
-    {
-      "name": "Fitness App",
-      "description": "Workout routines and tracking.",
-      "github": "https://github.com/yourname/fitness-app",
-      "techStack": "Flutter, Firebase"
+      "name": "Angular-Play-App",
+      "description": "Playing with Angular basic to intermendiate features with Https API, json Server",
+      "github": "https://github.com/RumiAust/angular-play-app",
+      "techStack": "Angular, Typescript, HTML, CSS"
     }
   ]
 }
