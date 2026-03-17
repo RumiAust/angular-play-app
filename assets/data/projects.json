@@ -10,19 +10,25 @@
       "name": "OpenID Connect Doctor",
       "description": "Creation of authentication configurations with OpenID for your applications. That includes also the verification of valid tokens and password grants.",
       "github": "https://github.com/RumiAust/amos2022ss08-openid-connect-doctor",
-      "techStack": "Node.js, Express, Angular, Typescript"
+      "techStack": "Node.js, Angular, Typescript, Html, CSS"
     },
     {
-      "name": "SSL Secure Connection",
-      "description": "Establishing Secure connection with Dotnet application",
-      "github": "https://github.com/RumiAust/DotNetAngularAppWithSSL",
-      "techStack": "Dotnet, C#, Angular"
+      "name": "DotNetPlus",
+      "description": "FullStack Web Application with Angular, ASP.NET Core Web API, Entity Framework Core, C# REST API, JWT Token",
+      "github": "https://github.com/RumiAust/fullstack-dot-net-angular-app",
+      "techStack": "C#, ASP.NET Core, Entity Framwork, SQL, Angular, TypeScript"
     },
     {
       "name": "Post Graduate Admission System",
       "description": "An application system for post gradute students to apply for post graduate programs",
       "github": "https://github.com/RumiAust/PgAdmissionSystem",
       "techStack": "SpringMVC, Html, Thymeleaf"
+    },
+    {
+      "name": "SSL Secure Connection",
+      "description": "Establishing Secure connection with Dotnet application",
+      "github": "https://github.com/RumiAust/DotNetAngularAppWithSSL",
+      "techStack": "C#,.NET"
     },
     {
       "name": "Find Intersection",
